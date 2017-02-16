@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="script.js"></script>
-  <title>Beer Review</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>Beer Review</title>
 </head>
+
 <body>
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <div class="page-header">
-        <h1>Beer Review</h1>
-      </div>
-
-      <section class="beers">
-        <h2>Beers</h2>
-        <ul class="beers-list">
-          
-        </ul>
-      </section>
-
-      <form class="beer-form">
-        <h3>Add a New Beer</h3>
-
-        <div class="form-group">
-          <input type="text"
-            class="beer-input form-control"
-            placeholder="Beer Name">
-          </input>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="page-header">
+                <h1>Beer Review</h1>
+            </div>
+            <section class="beers">
+                <h2>Beers</h2>
+                <ul class="beers-list">
+                </ul>
+            </section>
+            <form class="beer-form">
+                <h3>Add a New Beer</h3>
+                <div class="form-group">
+                    <input type="text" class="beer-input form-control" placeholder="Beer Name">
+                    </input>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="category-input form-control" placeholder="Category">
+                    </input>
+                </div>
+                <div class="form-group">
+                    <input type="number" class="rating-input form-control" placeholder="Rating from 0 to 5" min="0" max="5">
+                    </input>
+                </div>
+                <button class="btn btn-primary post-beer" type="button">Post</button>
+                <button class="btn btn-primary sort-beers" type="button">Sort</button>
+            </form>
         </div>
-        <div class="form-group">
-          <input type="text"
-            class="category-input form-control"
-            placeholder="Category">
-          </input>
-        </div>
-        <button class="btn btn-primary post-beer" type="button">Post</button>
-      </form>
-      
     </div>
-  </div>
-
+    <script src="script.js"></script>
 </body>
+
 </html>
